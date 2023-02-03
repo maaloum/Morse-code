@@ -53,4 +53,3 @@ def decode_message(message)
 end
 
 
-decode_message("-- -.--   -. .- -- .")
