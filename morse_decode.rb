@@ -26,10 +26,12 @@
   '-.--' => 'Y',
   '--..' => 'Z'
 }
+
 def get_letter(letter)
   @current_letter = @dictionary[letter]
   @current_letter
 end
+
 def decode_word(word)
   @letters = word.split
   @current_word = ''
@@ -39,6 +41,7 @@ def decode_word(word)
   end
   print "#{@current_word} "
 end
+
 
 def decode_message(message)
   @words = message.split('   ')
