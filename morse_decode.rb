@@ -41,8 +41,6 @@ def decode_word(word)
   end
   print "#{@current_word} "
 end
-
-
 def decode_message(message)
   @words = message.split('   ')
   @words.each do |word|
