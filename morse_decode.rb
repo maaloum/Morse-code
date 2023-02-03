@@ -51,5 +51,4 @@ def decode_message(message)
     decode_word(word)
   end
 end
-
-
+decode_message("-- -.--   -. .- -- .")
