@@ -1,4 +1,3 @@
-# Define the dictionnary of correspondance
 @dictionary = {
   '.-' => 'A',
   '-...' => 'B',
@@ -27,13 +26,10 @@
   '-.--' => 'Y',
   '--..' => 'Z'
 }
-# get the letter from the dictionary
 def get_letter(letter)
   @current_letter = @dictionary[letter]
   @current_letter
 end
-# Decode a word
-
 def decode_word(word)
   @letters = word.split
   @current_word = ''
@@ -43,8 +39,6 @@ def decode_word(word)
   end
   print "#{@current_word} "
 end
-
-# decode a compelete message
 def decode_message(message)
   @words = message.split('   ')
   @words.each do |word|
